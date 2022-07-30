@@ -1,0 +1,138 @@
+.headbar{
+border-bottom: 1px solid #f0f1f3;
+background-color: #373737;
+}
+
+.headbar a:hover{
+background-color: #434343;
+color: #dbb000;
+}
+
+.head_left a{
+color: #f4f4f4;
+}
+
+#name{
+color: #dbb000;
+}
+
+.wrapper{  
+border-bottom: 1px solid #f0f1f3;
+}
+
+.ent{
+border-bottom: 1px solid #f0f1f3;
+background-color: #2c2c2c;
+}
+
+.ent img{
+outline: 1px solid #f0f1f3;
+}
+
+a:hover > img{
+outline: 2px solid #dbc400;
+}
+
+.ent h1{
+color: #f4f4f4;
+}
+
+.ent p {
+color: #f4f4f4;
+}
+
+.ent a{
+color: #dbb000;
+}
+
+.ent a:hover,
+a:hover > h1{
+color: #dbc400;
+}
+
+.ab_me{
+border-bottom: 1px solid #f0f1f3;
+background-color: #373737;  
+}
+
+.ab_me a{
+color: #dbb000;
+}
+
+.ab_me a:hover,
+a:hover > h1{
+color: #dbc400;
+}
+
+.block_pro{
+border-bottom: 1px solid #f0f1f3;
+border-top: 1px solid #f0f1f3;
+background-color: #373737;   
+}
+
+.block_pro a{
+border: 5px solid #f0f1f3;
+background-color: #373737;
+color: #f4f4f4;
+}
+
+.block_pro a:hover{
+box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+background-color: #dbb000;
+}
+
+.block_skill{
+border-bottom: 1px solid #f0f1f3;
+border-top: 1px solid #f0f1f3;
+background-color: #373737;  
+}
+
+.block_cont{
+border-bottom: 1px solid #f0f1f3;
+border-top: 1px solid #f0f1f3;
+background-color: #2c2c2c;   
+}
+
+.block_cont a{
+text-decoration: none;
+color: #f4f4f4;
+}
+
+.block_cont a:hover{
+color: #f4f4f4;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+  color: #f4f4f4;
+}
+
+#l1{
+background-image: url("DARKicon_email.png");
+}
+
+#l2{
+background-image: url("DARKgithub.png");
+}
+
+#l3{
+background-image: url("DARKdiscord.png");
+}
+
+#l4{
+background-image: url("DARKtelegram.png");
+}
+
+button{
+background-color: #373737;
+}
+
+button:hover{
+background-color: #434343;
+}
+
+.cTheme{
+background-image: url("DARKlight.png");
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+}

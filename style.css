@@ -1,0 +1,228 @@
+
+@font-face{
+font-family: 'Bebas Neue';
+src: url(fonts/BebasNeue-Regular.ttf);
+font-family: 'Roboto';
+src: url(fonts/Roboto-Regular.ttf);
+}
+
+*,
+ *::before,
+  *::after {
+box-sizing: border-box;
+}
+
+/*Fonts
+-------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+letter-spacing: 0.1em;
+font-family: 'Bebas Neue', cursive;
+}
+
+p,
+a{
+font-family: 'Roboto', sans-serif;
+}
+
+/*Header
+--------*/
+
+.headbar{
+position: fixed;
+display: flex;
+top: 0;
+left: 0;
+z-index: 2;
+width: 100%;
+letter-spacing: 0.15em;
+font-weight: 700;
+}
+
+.head_left a{
+padding: 18px;
+font-size: 14px;
+text-decoration: none;
+}
+
+.head_left{
+position: absolute;
+display: flex;
+top: 0;
+right: 0;
+}
+
+#name{
+padding: 16px;
+font-size: 18px;
+text-decoration: none;
+text-align: center;
+}
+
+/*Wrapper
+---------*/
+
+.wrapper{
+position: absolute;
+top: 50px;
+left: 0;
+z-index: 1;
+width: 100%;
+margin: 0 auto;    
+}
+
+/*Enter Information
+-------------------*/
+.ent{
+width: 100%;
+padding: 25px 0;
+text-align: center;
+}
+
+.ent img{
+border-radius: 50%;
+}
+
+.ent h1{
+font-size: 48px;
+}
+
+.ent p {
+font-size: 20px;
+font-weight: 700;
+}
+
+.ent a{
+text-decoration: none;
+}
+
+hr{
+height: 1px; 
+border: none;   
+}
+
+/*About me
+----------*/
+
+.ab_me{
+display: flex;
+justify-content: center;
+width: 100%;
+text-align: center;
+}
+
+.block_inf1{
+width: 25%;
+padding: 25px;
+text-align: left;
+}
+
+.ab_me a{
+text-decoration: none;
+}
+
+/*Projects
+----------*/
+
+.block_pro{
+width: 100%;
+padding: 25px 0;
+text-align: center;  
+}
+
+.block_pro a{
+display: inline-flex;
+width: 300px;
+height: 250px;
+margin-top: 2em;
+margin-left: 2em;
+border-radius: 25px;
+background-position: center;
+background-repeat: no-repeat;
+text-decoration: none;
+align-items: center;
+justify-content: center;
+}
+
+.block_pro a:hover{
+transition-duration: 1s;
+opacity: 0.7;
+background-blend-mode: multiply;
+}
+
+.block_pro a:link p{
+opacity: 0;
+}
+
+.block_pro a:hover p{
+opacity: 1;
+}
+
+#proj1{
+background-image: url("project1.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+/*Skills
+--------*/
+
+.block_skill{
+width: 100%;
+padding: 25px 0;
+justify-content: center;
+text-align: center;  
+word-spacing: 20px;
+}
+
+.skill_icon{
+display: inline-block;
+}
+
+.block_skill img{
+width: 100px;
+height: 100px;
+}
+
+/*Contacts
+----------*/
+
+.block_cont{
+width: 100%;
+padding: 25px 0;
+justify-content: center;
+text-align: center;   
+}
+
+.block_cont ul{
+display: inline-block;
+list-style-type: none;
+text-align: justify;
+}
+
+li{
+margin: 0;
+padding: 36px 0 36px 84px;
+list-style: none;
+background-repeat: no-repeat;
+background-position: left center;
+background-size: 40px; 
+}
+
+.block_cont a{
+text-decoration: none;
+}
+
+button{
+border: none;  
+}
+
+.cTheme{
+
+}
+
