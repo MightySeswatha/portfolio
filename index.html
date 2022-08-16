@@ -1,133 +1,134 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-		<link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" type="text/css" href="light.css" class="style">
-        <script src="script.js"></script>
-		<title>Mighty Seswatha</title>
-	</head>
-	<body> 
-<!--Headbar
-***********-->
-<header>
-<div class="headbar">
-<a href="index.html" id="name">Mighty Seswatha</a>
-<a href="indexRU.html" id="name">RU</a>
-<div class="head_left">
-<button id="color"><a class="cTheme"></a></button>
-
-<script type="text/javascript">
-
-  if (localStorage.getItem('style') == 'dark') {
-    document.querySelector('.style').href="dark.css";
-  }
-  document.querySelector('#color').onclick = function (){
-    if (document.querySelector('.style').getAttribute('href') === 'light.css') {
-      document.querySelector('.style').href="dark.css";
-      localStorage.setItem('style', 'dark');
-    } else {
-      document.querySelector('.style').href="light.css";
-      localStorage.setItem('style', 'light');
-    }
-  }
-
-</script>
-
-<a href="#about">About me</a> 
-<a href="#project">Projects</a> 
-<a href="#skill">Skills</a> 
-<a href="#contact">Contact</a>  
-</div>
-</div>
-</header>
-<!--Main page
-*************-->
-<div class="wrapper">
-<div class="ent">
-<a href="index.html"><img src="logo_1.jpg" alt="logo_1" width="180" height="180"></a>
-<a href="index.html"><h1>Mighty Seswatha</h1></a>
-<p>Novice frontend developer</p>
-<p>I also study at <a href="https://www.bsuir.by/">BSUIR</a></p>
-<hr id="about">
-</div >
-<div class="ab_me" >
-<div class="block_inf1">
-<h2>About me</h2>
-<p>Hi, I am a novice frontend developer. This is my first "serious" job. Here you can learn more about me: look at my projects, explore my features and skills, as well as contact me.
-At the moment I'm studying at <a href="https://www.bsuir.by/">BSUIR</a>. Right now I'm interested in doing an internship with a big IT-company. I would also be happy if someone more experienced would be willing to share their experience and knowledge.
-</p>
-<hr id="project">
-</div>   
-</div>
-
-<div class="block_pro">
-<h1>Projects</h1>   
-
-<a href="https://github.com/MightySeswatha/Portfolio.git" id="proj1">
-<p>test</p>
-</a>
-
-<a href="https://github.com/MightSeswatha/Portfolio.git">
-<p>test</p>
-</a>
-
-<a href="https://github.com/MightySeswatha/Portfolio.git">
-<p>test</p>
-</a>
-
-<hr id="skill">
-</div>
-
-<div class="block_skill">
-<h1>Skills</h1>
-<div class="skill_icon">
-<img src="icon_html.png" alt="icon_html">
-<h2>HTML5</h2>
-</div>
-<div class="skill_icon">
-<img src="icon_css.png" alt="icon_css">
-<h2>CSS3</h2>
-</div>
-<div class="skill_icon">
-<img src="icon_js.png" alt="icon_js">
-<h2>JavaScript</h2>
-</div>
-<div class="skill_icon">
-<img src="icon_git.png" alt="icon_git">
-<h2>GitHub</h2>
-</div>
-<div class="skill_icon">
-<img src="icon_photo.png" alt="icon_photo">
-<h2>PhotoShop</h2>
-</div>
-<hr id="contact">
-</div>
-
-<div class="block_cont">
-<h1>Contact</h1>
-<ul>
-<li id="l1">
-    <a href="teszerorobot@gmail.com">teszerorobot@gmail.com</a>
-</li>
-<li id="l2">
-    <a href="https://github.com/MightySeswatha">https://github.com/MightySeswatha</a>
-</li> 
-<li id="l3">
-    <a href="https://discordapp.com/users/607580404391870483/">https://discordapp.com/users/607580404391870483/</a>
-</li>
-<li id="l4">
-    <a href="https://t.me/TesFores">https://t.me/TesFores</a>
-</li>   
-</ul>
-</div>
-
-</div>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="light.css" class="style">
+  <script src="script.js"></script>
+  <title>Mighty Seswatha</title>
+</head>
+<body> 
+  <div class="wrapper">
 
 
-	</body>
+    <header>
+      <div class="headbar">
+        <div class="left">
+          <a href="index.html">Mighty Seswatha</a>
+          <a href="indexRU.html">RU</a>
+        </div>
+        <div class="right">
+          <a class="cTheme" id="color"><button></button></a>
+
+          <script type="text/javascript">
+
+            if (localStorage.getItem('style') == 'dark') {
+              document.querySelector('.style').href="dark.css";
+            }
+            document.querySelector('#color').onclick = function (){
+              if (document.querySelector('.style').getAttribute('href') === 'light.css') {
+                document.querySelector('.style').href="dark.css";
+                localStorage.setItem('style', 'dark');
+              } else {
+                document.querySelector('.style').href="light.css";
+                localStorage.setItem('style', 'light');
+              }
+            }
+
+          </script>
+          <a href="#about" id="none">About me</a> 
+          <a href="#project" id="none">Projects</a> 
+          <a href="#skill" id="none">Skills</a> 
+          <a href="#contact" id="none">Contact</a> 
+        </div> 
+      </div>
+    </header>
+
+    <div class="ent">
+      <a href="index.html"><img src="logo_1.jpg" alt="logo_1" width="180" height="180"></a>
+      <a href="index.html"><h1>Mighty Seswatha</h1></a>
+      <p>Novice frontend developer</p>
+      <p>I also study at <a href="https://www.bsuir.by/">BSUIR</a></p>
+      <hr id="about">
+    </div >
+
+    <div class="ab_me" >
+      <div class="block_inf1">
+        <h2>About me</h2>
+        <p>Hi, I am a novice frontend developer. This is my first "serious" job. Here you can learn more about me: look at my projects, explore my features and skills, as well as contact me.
+          At the moment I'm studying at <a href="https://www.bsuir.by/">BSUIR</a>. Right now I'm interested in doing an internship with a big IT-company. I would also be happy if someone more experienced would be willing to share their experience and knowledge.
+        </p>
+        <hr id="project">
+      </div>   
+    </div>
+
+    <div class="block_pro">
+      <h1>Projects</h1>   
+      <div class="projects">
+        <a href="https://github.com/MightySeswatha/Portfolio.git" id="proj1">
+          <p>Layout#1</p>
+        </a>
+
+        <a href="https://github.com/MightSeswatha/Portfolio.git">
+          <p>Layout#2</p>
+        </a>
+
+        <a href="https://github.com/MightySeswatha/Portfolio.git">
+          <p>Layout#3</p>
+        </a>
+      </div>
+      <hr id="skill">
+    </div>
+
+    <div class="block_skill">
+      <h1>Skills</h1>
+      <div class="skill_icon">
+        <img src="icon_html.png" alt="icon_html">
+        <h2>HTML5</h2>
+      </div>
+      <div class="skill_icon">
+        <img src="icon_css.png" alt="icon_css">
+        <h2>CSS3</h2>
+      </div>
+      <div class="skill_icon">
+        <img src="icon_js.png" alt="icon_js">
+        <h2>JavaScript</h2>
+      </div>
+      <div class="skill_icon">
+        <img src="icon_git.png" alt="icon_git">
+        <h2>GitHub</h2>
+      </div>
+      <div class="skill_icon">
+        <img src="icon_photo.png" alt="icon_photo">
+        <h2>PhotoShop</h2>
+      </div>
+      <hr id="contact">
+    </div>
+
+    <div class="block_cont">
+      <h1>Contact</h1>
+      <ul>
+        <li id="l1">
+          <a href="teszerorobot@gmail.com">teszerorobot@gmail.com</a>
+        </li>
+        <li id="l2">
+          <a href="https://github.com/MightySeswatha">https://github.com/MightySeswatha</a>
+        </li> 
+        <li id="l3">
+          <a href="https://discordapp.com/users/607580404391870483/">https://discordapp.com/users/607580404391870483/</a>
+        </li>
+        <li id="l4">
+          <a href="https://t.me/TesFores">https://t.me/TesFores</a>
+        </li>   
+      </ul>
+    </div>
+
+
+  </div>
+</body>
 </html>
