@@ -1,15 +1,15 @@
 
 @font-face{
-font-family: 'Bebas Neue';
-src: url(fonts/BebasNeue-Regular.ttf);
-font-family: 'Roboto';
-src: url(fonts/Roboto-Regular.ttf);
+    font-family: 'Bebas Neue';
+    src: url(fonts/BebasNeue-Regular.ttf);
+    font-family: 'Roboto';
+    src: url(fonts/Roboto-Regular.ttf);
 }
 
 *,
- *::before,
-  *::after {
-box-sizing: border-box;
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 /*Fonts
@@ -21,208 +21,354 @@ h3,
 h4,
 h5,
 h6{
-letter-spacing: 0.1em;
-font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.1em;
+    font-family: 'Bebas Neue', cursive;
 }
 
 p,
 a{
-font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-/*Header
---------*/
-
-.headbar{
-position: fixed;
-display: flex;
-top: 0;
-left: 0;
-z-index: 2;
-width: 100%;
-letter-spacing: 0.15em;
-font-weight: 700;
+html{
+    font-size: 10px;
 }
 
-.head_left a{
-padding: 18px;
-font-size: 14px;
-text-decoration: none;
+@media screen and (min-width: 1000px){
+
+    html{
+        font-size: 14px;
+    }
+
 }
 
-.head_left{
-position: absolute;
-display: flex;
-top: 0;
-right: 0;
-}
+@media screen and (min-width: 1600px){
 
-#name{
-padding: 16px;
-font-size: 18px;
-text-decoration: none;
-text-align: center;
+    html{
+        font-size: 20px;
+    }
+
 }
 
 /*Wrapper
 ---------*/
 
 .wrapper{
-position: absolute;
-top: 50px;
-left: 0;
-z-index: 1;
-width: 100%;
-margin: 0 auto;    
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
+
+
+/*Header
+--------*/
+
+.left{
+    display: block;
+    float: left;
+}
+
+.right{
+    display: block;
+    float: right;
+}
+
+.headbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    font-weight: 700;
+    //*letter-spacing: 0.15em;*//
+}
+
+.headbar a{
+    display: inline-block;
+    text-align: center;
+    float: left;
+    padding: 12px;
+    font-size: 1.85rem;
+    text-decoration: none;
+}
+
+button{
+    visibility: hidden;
+    border: none;
+}
+
+.cTheme{
+
+}
+
+@media screen and (max-width: 650px) {
+
+
+  .headbar{
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+  }
+
+  .header a {
+    display: block;
+    text-align: center;
+}
+
+}
+
+@media screen and (max-width: 391px){
+ 
+    #none{
+        display: none;
+    }
+
+}
+
+
 
 /*Enter Information
 -------------------*/
 .ent{
-width: 100%;
-padding: 25px 0;
-text-align: center;
+    width: 100%;
+    padding: 100px 0 25px;
+    text-align: center;
 }
 
 .ent img{
-border-radius: 50%;
+    border-radius: 50%;
 }
 
 .ent h1{
-font-size: 48px;
+    font-size: 3rem;
 }
 
 .ent p {
-font-size: 20px;
-font-weight: 700;
+    font-size: 1.7rem;
+    font-weight: 700;
 }
 
 .ent a{
-text-decoration: none;
+    text-decoration: none;
 }
 
 hr{
-height: 1px; 
-border: none;   
+    height: 1px; 
+    border: none;   
 }
+
 
 /*About me
 ----------*/
 
 .ab_me{
-display: flex;
-justify-content: center;
-width: 100%;
-text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
 }
 
 .block_inf1{
-width: 25%;
-padding: 25px;
-text-align: left;
+    width: 45%;
+    padding: 25px;
+    text-align: left;
+    font-size: 1.8rem;
 }
 
 .ab_me a{
-text-decoration: none;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 971px){
+
+    .block_inf1{
+        width: 100%;
+    }
+
 }
 
 /*Projects
 ----------*/
 
 .block_pro{
-width: 100%;
-padding: 25px 0;
-text-align: center;  
+    width: 100%;
+    padding: 25px 0;
+    font-size: 1.8rem;
+    text-align: center;  
+}
+
+.projects{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+
+.block_pro a p{
+    font-size: 1.4rem;
 }
 
 .block_pro a{
-display: inline-flex;
-width: 300px;
-height: 250px;
-margin-top: 2em;
-margin-left: 2em;
-border-radius: 25px;
-background-position: center;
-background-repeat: no-repeat;
-text-decoration: none;
-align-items: center;
-justify-content: center;
+    flex: 1 1 auto;
+    margin: 0 1rem;
+    display: inline-flex;
+    margin-bottom: 1rem;
+    border-radius: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .block_pro a:hover{
-transition-duration: 1s;
-opacity: 0.7;
-background-blend-mode: multiply;
+    transition-duration: 1s;
+    opacity: 0.7;
+    background-blend-mode: multiply;
 }
 
 .block_pro a:link p{
-opacity: 0;
+    opacity: 0;
 }
 
 .block_pro a:hover p{
-opacity: 1;
+    opacity: 1;
 }
 
 #proj1{
-background-image: url("project1.jpg");
-background-size: cover;
-background-repeat: no-repeat;
+    background-image: url("project1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 300px){
+
+    .block_pro a{
+        width: 240px;
+        height: 200px;
+    }
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 606px){
+
+    .block_pro a{
+        width: 290px;
+        height: 230px;
+    }
+
+}
+
+@media screen and (min-width: 606px) and (max-width: 1100px){
+
+    .block_pro a{    
+        width: 270px;
+        height: 240px;
+    }
+
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1600px){
+
+    .block_pro a{
+        width: 330px;
+        height: 270px;
+    }
+
+}
+
+@media screen and (min-width: 1600px) and (max-width: 2100px){
+
+    .block_pro a{
+        width: 440px;
+        height: 350px;
+    }
+
+}
+
 
 /*Skills
 --------*/
-
 .block_skill{
-width: 100%;
-padding: 25px 0;
-justify-content: center;
-text-align: center;  
-word-spacing: 20px;
+    width: 100%;
+    padding: 25px 0;
+    justify-content: center;
+    text-align: center;  
+    word-spacing: 1.7rem;
 }
 
+.block_skill h1{
+    font-size: 3rem;;
+}
+
+.block_skill h2{
+    font-size: 2rem;
+}
+
+
 .skill_icon{
-display: inline-block;
+    display: inline-block;
 }
 
 .block_skill img{
-width: 100px;
-height: 100px;
+    width: 10rem;
+    height: 10rem;
 }
 
 /*Contacts
 ----------*/
 
 .block_cont{
-width: 100%;
-padding: 25px 0;
-justify-content: center;
-text-align: center;   
+    display: block;
+    width: 100%;
+    justify-content: center;
+    text-align: center;   
 }
 
 .block_cont ul{
-display: inline-block;
-list-style-type: none;
-text-align: justify;
+    display: inline-block;
+    list-style-type: none;
+    text-align: justify;
+}
+
+.block_cont h1{
+    font-size: 3rem;
 }
 
 li{
-margin: 0;
-padding: 36px 0 36px 84px;
-list-style: none;
-background-repeat: no-repeat;
-background-position: left center;
-background-size: 40px; 
+    margin: 0;
+    padding: 3rem 0 3rem 8rem;
+    list-style: none;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 4rem; 
 }
 
 .block_cont a{
-text-decoration: none;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 
-button{
-border: none;  
-}
+@media screen and (max-width: 503px) {
 
-.cTheme{
+    .block_cont ul{
+        padding: 0;
+    }
+
+    li{
+        padding: 3rem 0 3rem 3rem;
+        background-size: 2rem;
+    }
+
+    .block_cont a{
+        font-size: 1rem;
+    }
 
 }
 
