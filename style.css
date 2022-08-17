@@ -106,16 +106,23 @@ button{
 
 @media screen and (max-width: 650px) {
 
+  .left{
+     float: none;
+ }
 
-  .headbar{
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      text-align: center;
-  }
+ .right{
+  float: none;
+}
 
-  .header a {
+.headbar{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.header a {
     display: block;
     text-align: center;
 }
