@@ -106,11 +106,11 @@ button{
 
 @media screen and (max-width: 650px) {
 
-  .left{
-     float: none;
- }
+.left{
+   float: none;
+}
 
- .right{
+.right{
   float: none;
 }
 
@@ -129,11 +129,19 @@ button{
 
 }
 
-@media screen and (max-width: 391px){
+@media screen and (max-width: 408px){
 
-    #none{
-        display: none;
-    }
+.left{
+   float: none;
+}
+
+.right{
+  float: none;
+}
+
+#none{
+    display: none;
+}
 
 }
 
